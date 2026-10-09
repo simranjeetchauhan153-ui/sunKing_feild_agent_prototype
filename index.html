@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffd822" />
+    <meta
+      name="description"
+      content="Sun King field agent customer onboarding prototype."
+    />
+    <title>Sun King Field — Customer onboarding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="prototype-stage">
+      <main class="phone-frame" aria-label="Sun King field agent mobile app prototype">
+        <div class="phone-screen">
+          <div class="device-status"><span>9:41</span><span>●●● &nbsp; Wi-Fi &nbsp; ▰</span></div>
+          <header class="phone-header">
+            <button class="phone-back" data-action="home" aria-label="Back to overview">‹</button>
+            <a class="phone-brand" href="#" data-action="home" aria-label="Sun King home">
+              <img src="Screenshot%202026-10-09%20225650.png" alt="Sun King" />
+              <span>FIELD</span>
+            </a>
+            <span id="breadcrumb-current" hidden>Overview</span>
+            <button class="help-button" data-action="help" aria-label="Help">?</button>
+          </header>
+          <div id="view" class="view" aria-live="polite"></div>
+          <nav class="phone-nav" aria-label="App navigation">
+            <button class="phone-nav-item active" data-nav="home"><span>⌂</span>Home</button>
+            <button class="phone-nav-item" data-nav="customers"><span>♙</span>Customers</button>
+            <button class="phone-nav-item" data-nav="help"><span>?</span>Support</button>
+          </nav>
+        </div>
+      </main>
+    </div>
+    <div class="toast-region" id="toast-region" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
